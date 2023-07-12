@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Lekáreň</title>
+
+</head>
+<body>
+    <div id="hlava"></div>
+    <div id="podHlavou"></div>
+    <div id="detail"></div>
+    <div id="pata"></div>
+
+<script type="text/babel">
+
+/* Hlavička */
+
+    class Header extends React.Component{
+
+        constructor(props){
+            super(props)
+            this.state = {data: [], hladanyVyraz: ""};
+        }
+
+        componentDidMount(){
+            let testovany = JSON.parse(localStorage.getItem("data"));
+
+            if(testovany == null){
+                testovany = [];
+            }
+
+            this.setState({data: testovany}); 
+        }
+
+        render(){
+            return(
+            <>
+                <section className="header">
+                    <a className="navbar-brand" style={{fontSize: "26px", fontWeight: "bold"}}>
+                        <img src="https://media.istockphoto.com/id/801762106/vector/pharmacy-icon.jpg?s=612x612&w=0&k=20&c=ED6GNMkLvo468lQGy9k0JIbvNhluF3iAfgAm9ThEEtk=" alt="Logo" width="85" height="85" style={{borderRadius: "10px"}} class="d-inline-block align-text-center"/> Pharmacy 
+                    </a>
+
+                    <div>
+                        <ul id="navbar">
+                            <li><a href="index.html"><i className="fa-solid fa-house"></i> Domov</a></li>
+                            <li><a href="kontakt.html"><i className="fa-solid fa-phone"></i> Kontakt</a></li>
+                            <li><a className="active" href="kosik.html"><i className="fa-solid fa-basket-shopping"></i> Košík</a></li>
+
+                            <li>
+                                <form className="d-flex" role="search">
+                                    <input className="form-control me-2" type="search" placeholder="Hľadať" onChange={(event) => this.setState({hladanyVyraz: event.target.value})}/>
+                                    <button className="btn" style={{color: "darkgreen", padding: "7px", borderRadius: "150%", border: "solid 1px lightgreen"}}><i class="fa-solid fa-pills"></i></button>
+                                </form>
+                                <div className="vyhladane">
+                                    {
+                                        this.state.data.
+                                        filter(() => this.state.hladanyVyraz != "").
+                                        filter((produkt) => produkt.meno.toUpperCase().includes(this.state.hladanyVyraz.toUpperCase())).
+                                        map((produkt) => <a href={'./detailLieku.html?id=' + produkt.id}><p><img src={produkt.obrazok} style={{width: "30%", padding: "2px", borderRadius: "50%", border: "solid 1px lightgreen"}}/> {produkt.meno}</p></a>)
+                                    }
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </>
+        )}
+    }
+
+    let hlavicka = ReactDOM.createRoot(document.getElementById("hlava"));
+    hlavicka.render(<Header/>);
+
+/* Pod hlavičkou */
+
+    class UnderHeader extends React.Component{
+
+        render(){
+            return(
+            <>
+                <section className="header">
+                    <ul id="under-header">
+                        <li><a href="lieky.html"> Lieky </a></li>
+                        <li><a href="doplnky.html"> Výživové doplnky </a></li>
+                        <li><a href="kozmetika.html"> Lekárenská kozmetika </a></li>
+                        <li><a href="potravinyNapoje.html"> Potraviny a nápoje</a></li>
+                        <li><a href="zdravotnickePomocky.html"> Zdravotnícke pomôcky </a></li>
+                        <li><a href="veterina.html"> Veterina </a></li>
+                    </ul>
+                </section>
+            </>
+        )}
+    }
+
+    let podHlava = ReactDOM.createRoot(document.getElementById("podHlavou"));
+    podHlava.render(<UnderHeader/>);
+
+/* Košík */    
+
+    class Cart extends React.Component {
+
+        constructor(props){
+        super(props);
+       
+        this.state = {kosik: [], produkt: "", ukazToaster: false, toasterSprava: "", meno: "", email: "", telefon: "", adresa: ""}; 
+
+        let data = JSON.parse(localStorage.getItem("data"));
+        };
+
+        componentDidMount(){
+            fetch("data.json")
+            .then((response) => response.json())
+            .then(json => this.setState({json: json, kosik: JSON.parse(localStorage.getItem("kosik"))}))
+                        
+        }
+
+        handleRemove = id => {
+            const updatedCart = this.state.kosik.filter(produkt => produkt.id !== id)
+            this.setState({kosik: updatedCart});
+        
+            localStorage.setItem("kosik", JSON.stringify(updatedCart));
+        };
+
+        pripocitanie = id => {
+            this.setState(state => {
+            const index = state.kosik.findIndex(produkt => produkt.id === id);
+                if (index !== -1) {
+                    const newKosik = [...state.kosik];
+                    newKosik[index].mnozstvo++;
+                    localStorage.setItem("kosik", JSON.stringify(newKosik));
+                    return { kosik: newKosik };
+                }
+                
+            });
+        };
+
+        odpocitanie = id => {
+            this.setState(state => {
+            const index = state.kosik.findIndex(produkt => produkt.id === id);
+                if (index !== -1) {
+                    const newKosik = [...state.kosik];
+                    newKosik[index].mnozstvo--;
+                    if (newKosik[index].mnozstvo < 1) {
+                        newKosik[index].mnozstvo = 1;
+                    }
+                    localStorage.setItem("kosik", JSON.stringify(newKosik));
+                    return { kosik: newKosik };
+                }
+            });
+        };
+
+        vycistitKosik = () => {
+            const newKosik2 = [];
+            this.setState({kosik: newKosik2});
+            localStorage.setItem("kosik", JSON.stringify(newKosik2));
+        };
+
+        ukazToaster(sprava) {
+            this.setState({ ukazToaster: true, toasterSprava: sprava });
+            setTimeout(() => this.setState({ ukazToaster: false, toasterSprava: "" }), 1500);
+        };
+
+        handleChange = (event) => {
+            this.setState({ [event.target.name]: event.target.value });
+        };
+
+        handleSubmit = (event) => {
+            event.preventDefault();
+                
+            this.setState({meno: "", email: "", telefon: "", adresa: ""});
+        }
+
+        cenaProduktu = (produkt) => {
+            return produkt.cena * produkt.mnozstvo;
+        }
+
+        render(){
+
+            const spolu = this.state.kosik.reduce((sum, produkt) => sum + produkt.cena * produkt.mnozstvo, 0);
+                
+            return(
+                <section id="cart" class="section-p1">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Odstrániť</td>
+                                <td>Obrázok</td>
+                                <td>Produkt</td>
+                                <td>Cena</td>
+                                <td>Množstvo</td>
+                                <td>Spolu</td>
+                            </tr>
+                        </thead>
+                        
+                    {this.state.kosik.map((produkt) =>  
+                        <tbody>
+                            <tr>
+                                <td><button className="basket" onClick={() => {this.handleRemove(produkt.id); this.ukazToaster("Položka bola odstránená z košíka!");}}><i class="far fa-times-circle"></i> Odstráň položku</button>
+                                {this.state.ukazToaster && (
+                                    <div id="toast">
+                                        <h5><strong style={{color: "navy"}}>{this.state.toasterSprava}</strong></h5>
+                                    </div>
+                                )}</td>
+                                <td><img src={produkt.obrazok} width="30px"/></td>
+                                <td style={{fontWeight: "bold"}}>{produkt.meno}</td>
+                                <td>{produkt.cena} €</td>
+                                <td><button className="basket" onClick={() => this.odpocitanie(produkt.id)}> - </button>
+                                    {produkt.mnozstvo}
+                                    <button className="basket" onClick={() => this.pripocitanie(produkt.id)}> + </button></td>
+                                <td style={{fontWeight: "bold"}}> {this.cenaProduktu(produkt).toFixed(2)} €</td>
+                            </tr>
+                        </tbody>
+                        )}
+                    </table> 
+
+                    <div id="form-details2">
+                        <form onSubmit={this.handleSubmit}>
+                            <h5><strong style={{textDecoration: "underline", color: "navy"}}>Fakturačné a doručovacie údaje:</strong></h5>
+                            <label style={{fontWeight: "bold"}} htmlFor="meno">Meno:</label>
+                            <input type="text" name="meno" placeholder="Meno" value={this.state.meno} onChange={this.handleChange}/>
+                            <label style={{fontWeight: "bold"}} htmlFor="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="E-mail" value={this.state.email} onChange={this.handleChange}/>
+                            <label style={{fontWeight: "bold"}} htmlFor="telefon">Telefón:</label>
+                            <input type="phone" name="telefon" placeholder="Telefón" value={this.state.telefon} onChange={this.handleChange}/>
+                            <label style={{fontWeight: "bold"}} htmlFor="adresa">Adresa:</label>
+                            <input type="text" name="adresa" placeholder="Adresa" value={this.state.adresa} onChange={this.handleChange}/>
+                            <button type="submit" className="normal" onClick={() =>{this.vycistitKosik(); alert("Objednávka bola odoslaná. Ďakujeme!")}}>Odoslať objednávku</button>
+                        </form>
+
+                        <div className="subtotal">
+                            <h4>Zhrnutie objednávky:</h4>
+                            <table>
+                                <tr>
+                                    <td><strong>Priebežné zhrnutie: </strong></td>
+                                    <td>{spolu.toFixed(2)} €</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dovoz: </strong></td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><strong style={{fontSize: "19px"}}>Celkom: </strong></td>
+                                    <td style={{fontSize: "19px", fontWeight: "bold"}}>{spolu.toFixed(2)} €</td>
+                                </tr>
+                            </table>
+                        </div> 
+                    </div>
+                </section>  
+            )}                           
+        }
+
+        let ibalgin = ReactDOM.createRoot(document.getElementById("detail"));
+        ibalgin.render(<Cart/>);
+
+
+/* Päta */
+
+    class Footer extends React.Component{
+
+        render(){
+            return(
+            <>    
+                <footer>
+                    <div className="col">
+                        <img src="https://media.istockphoto.com/id/801762106/vector/pharmacy-icon.jpg?s=612x612&w=0&k=20&c=ED6GNMkLvo468lQGy9k0JIbvNhluF3iAfgAm9ThEEtk=" width="45" height="45" style={{padding: "5px"}}/>
+                        <h4>Kontakt</h4>
+                        <p><strong>Telefón:</strong> +421 915 123 456 / +421 905 789 123</p>
+                        <p><strong>Hodiny:</strong> 07:00 - 16:00 (Pon - Ned)</p>
+                        <div className="follow">
+                            <h4>Sleduj nás aj na:</h4>
+                            <div>
+                                <i className="fab fa-facebook-f"></i>
+                                <i className="fab fa-twitter"></i>
+                                <i className="fab fa-instagram"></i>
+                                <i className="fab fa-pinterest-p"></i>
+                                <i className="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col install">
+                        <h4>Platobná brána</h4>
+                        <p>Secured Payment Gateways</p>
+                        <img src="fotky/paypal-payment-methods-icons-hd-png-download.png"/>
+                    </div>
+
+                    <div className="col install">
+                        <h4>Nainštaluj si aplikáciu</h4>
+                        <p>Z App Store alebo Google Play</p>
+                        <div className="row">
+                            <img src="fotky/apple-app-store-logo.jpg" alt=""/>
+                            <img src="fotky/google pay.png" alt=""/>
+                        </div>
+                    </div>
+
+                    <div className="copyright">
+                        <p>All rights reserved by Monika1959 @2023</p>
+                    </div>   
+                </footer>
+            </> 
+        )}
+    }  
+
+    let paticka = ReactDOM.createRoot(document.getElementById("pata"));
+    paticka.render(<Footer/>);
+
+</script>
+</body>
+</html>
+    

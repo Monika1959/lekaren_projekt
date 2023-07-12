@@ -1,0 +1,783 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+.section-m1{
+    margin: 40px 0;
+}
+
+/* hlavicka */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    background-color: rgb(29, 213, 29);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1;
+}
+.vyhladane{
+    width: 72%;
+    border-radius: 5px;
+    padding-left: 5px;
+    background-color: rgb(83, 197, 83);
+    opacity: 0.85;
+    position: absolute;
+    z-index: 999;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: white;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#under-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#under-header li{
+    list-style: none;
+    padding: 0 45px;
+    position: relative;
+}
+#under-header li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 750;
+    transition: 0.3s ease;
+}
+#under-header li a:hover,
+#under-header li a.active{
+    color: white;
+}
+#under-header li a.active::after,
+#under-header li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: -4px;
+    left: 45px;
+}
+
+/* akciove produkty */
+#akcia{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url("fotky/old-pharmacy-bottles-maria-angelica-maira.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#akcia h4{
+    color: darkgreen;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: darkseagreen;
+    border-radius: 10px;
+    opacity: 0.75;
+}
+#akcia h2{
+    color: azure;
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+#akcia h2 span{
+    color: rgb(211, 16, 16);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(252, 130, 109);
+    border-radius: 15px;
+    opacity: 0.75;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin-left: 5px;
+    color: black;
+    background-color: rgb(248, 222, 188);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#akcia button:hover{
+    background-color: darkseagreen;
+    color: azure;
+}
+
+/* symptomy */
+#symptomy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.symptom-1{
+    padding: 40px 80px;
+}
+#symptomy .sym-box{
+   width: 160px;
+   text-align: center;
+   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+   border: solid 1px rgb(156, 155, 155);
+   border-radius: 7px;
+   padding: 3px;
+   margin: 25px;
+   position: relative;
+}
+#symptomy .sym-box:hover{
+    opacity: 1;
+}
+#symptomy .sym-box img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;  
+}
+#symptomy .sym-box a{ 
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 2px bisque;
+}
+h3{
+    font-weight: bold;
+    padding: 40px 80px;
+    color: mediumblue;
+}
+
+/* pata */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(40, 201, 40);
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: navy;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid aquamarine;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 5px;
+    width: 45%;
+    height: 8vh;   
+}
+footer .follow i:hover,
+footer a:hover{
+    color: aquamarine;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+/* lieky */
+#page-header-lieky{
+    background-image: url("fotky/pills.webp");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-lieky h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+#produkty{
+    text-align: center;
+}
+#produkty .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#produkty .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid blanchedalmond;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07);
+    margin: 15px 0;
+}
+#produkty .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.12);
+}
+#produkty .pro img{
+    width: 80%;
+    border-radius: 20px;
+}
+#produkty .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#produkty .pro .des h5{
+    padding-top: 7px;
+    color: navy;
+    font-size: 14px;
+}
+#produkty .pro .des i{
+    font-size: 12px;
+    color: orange;
+}
+#produkty .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: navy;
+}
+#stranky{
+    text-align: center;
+}
+#stranky a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    color: bisque;
+    font-weight: 500;
+}
+#stranky a i {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* detail lieku */
+.prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+.prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.prodetails .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+.prodetails .single-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+.prodetails .single-pro-details h2{
+    font-size: 26px;
+}
+.prodetails .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.prodetails .single-pro-details input:focus{
+    outline: none;
+}
+.prodetails .single-pro-details button{
+    background-color: mediumblue;
+    color: white;
+}
+.prodetails .single-pro-details span{
+    line-height: 25px;
+}
+button.count{
+    font-size: 10px;
+    padding: 5px 12px;
+    margin-right: 15px;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+/* kontakt */
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+}
+#contact-details .details{
+    width: 40%;
+}
+#contact-details .details span,
+#form-details form span{
+    font-size: 12px;
+}
+#contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+#contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+#contact-details .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contact-details .mapa{
+    width: 55%;
+    height: 400px;
+}
+#contact-details .mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid grey;
+}
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid rgb(3, 158, 3);
+}
+#form-details form button{
+    background-color: mediumblue;
+    color: white;
+}
+#form-details .ludia div{
+    padding-bottom: 25px;
+    align-items: flex-start;
+}
+#form-details .ludia div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+#form-details .ludia div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+/* kosik */
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width:  70px;
+}
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid rgb(250, 214, 170);
+    border-left: none;
+    border-right: none;
+}
+#cart table thead{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+    font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid rgb(250, 214, 170);
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid rgb(250, 214, 170);
+    padding: 10px;
+    font-size: 13px;
+}
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#subtotal button{
+    background-color: mediumblue;
+    color: white;
+    padding: 12px 20px;
+}
+button.basket{
+    font-size: 15px;
+    padding: 5px;
+    margin: 15px;
+    color: black;
+    background-color: rgb(107, 218, 107);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+.subtotal{
+    width: 70%;
+    height: 35%;
+    border: 1px solid rgb(163, 163, 113);
+    padding: 30px ;
+}
+.subtotal table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.subtotal table td{
+    width: 50%;
+    border: 1px solid rgb(163, 163, 113);
+    padding: 10px;
+    font-size: 13px;
+}
+#form-details2{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 40px;
+    border: 1px solid rgb(163, 163, 113);
+}
+#form-details2 form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form-details2 form input{
+    width: 70%;
+    padding: 10px 15px;
+    outline: none;
+    margin-bottom: 10px;
+}
+#form-details2 button{
+    background-color: mediumblue;
+    color: azure;
+    padding: 12px 20px;
+}
+#page-header-doplnky{
+    background-image: url("https://images.indianexpress.com/2022/03/supplements-1200.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-doplnky h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+
+/* ostatne */
+/***********/
+#page-header-veterina{
+    background-image: url("https://backend.drmax.sk/media/amasty/blog/31558-dog.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-veterina h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+/***********/
+#page-header-kozmetika{
+    background-image: url("https://www.mamou-stylove.cz/wp-content/uploads/2017/08/kosmetika-cervenec_2-770x430.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-kozmetika h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+/***********/
+#page-header-potr{
+    background-image: url("https://df66d5z5mw5eh.cloudfront.net/__thumb/web/obrazky/blog/Potravinov%C3%A9%20alergie%2C%20intolerancie%2C%20senzitivity/potravinova-alergia-intolerancia-senzitivita.jpg?width=1200&quality=90&6e39c");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-potr h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+/***********/
+#page-header-pom{
+    background-image: url("https://moodle.uniba.sk/pluginfile.php/69879/course/overviewfiles/goddard-sponsored-hero-image-june2021.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-pom h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+#page-header-kontakt{
+    background-image: url("https://www.tannlegeforeningen.no/images/200.658f116617a76142ce51be0d/1625727570104/(2)%20kontakt_iStock-1200358465.jpg");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-kontakt h2{
+    color: rgb(144, 144, 248);
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+#page-header-akcia{
+    background-image: url("https://www.svet-svietidiel.sk/ImgP.ashx?co=/ImgGalery/Img1/Clanky/aktuality-home/slevove_poukazy_TOP_znacky_800x300px.jpg&fd=u2&pa=2");
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-akcia h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-shadow: 0 0 35px lightblue;
+    -webkit-text-stroke: 0.5px black;
+}
+#page-header-ostatne{
+    background-color: darkseagreen;
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header-ostatne h2{
+    color: mediumblue;
+    font-weight: bold;
+    text-decoration: underline;
+    -webkit-text-stroke: 0.5px black;
+}
+/***********/
+#toast {
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: rgb(250, 131, 88);
+    color: white; 
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed; 
+    z-index: 1; 
+    left: 40%; 
+    top: 30px;
+}
+#toast button{
+    background-color: mediumblue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

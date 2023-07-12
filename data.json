@@ -1,0 +1,197 @@
+[
+    {
+        "id": 1, "obrazok": "fotky/lieky1.webp", "meno": "Ibalgin 400", "cena": 3.59, "popis": "Liek obsahuje liečivo ibuprofen, ktoré patrí do skupiny nesteroidných protizápalových liečiv. Liek zmierňuje bolesť a zápal rôzneho pôvodu, zvlášť pri ochoreniach pohybového ústrojenstva. Taktiež tlmí horúčku, ktorá sprevádza napríklad choroby z prechladnutia. Liek sa užíva:pri miernej až strednej bolesti, napríklad pri bolesti hlavy, zubov, chrbta, pri bolestivej menštruácii, pri bolesti svalov a kĺbov sprevádzajúcich chrípkové ochorenia, pri poraneniach mäkkých tkanív ako je pomliaždenie a vyvrtnutie, pri horúčkovitých stavoch počas chrípkových ochorení, ako doplnková liečba horúčkovitých stavov pri iných ochoreniach, v prípade zápalových a degeneratívnych ochorení kĺbov (artritída) a chrbtice alebo mäkkých tkanív pohybového ústrojenstva sprevádzaných bolestivosťou, začervenaním, opuchom a stuhnutosťou kĺbov iba na odporúčanie lekára.", "kategoria": "lieky", "category": "bolest", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 3.99
+    },
+    {
+        "id": 2, "obrazok": "fotky/lieky2.jpg", "meno": "Olfen-naplast", "cena": 6.79, "popis": "Liek znižuje bolesť. Patrí do skupiny nesteroidných protizápalových liekov. Liek sa používa na krátkodobú liečbu v miestnej symptomatickej liečbe bolesti spojenej s akútnym presilením, vyvrtnutím alebo podliatinách na rukách a nohách v dôsledku zranení, napríklad športových úrazoch.", "kategoria": "lieky", "category": "bolest", "mnozstvo": 1
+    },
+    {
+        "id": 3, "obrazok": "fotky/lieky3.jpg", "meno": "Coldrex tablety", "cena": 6.62, "popis": "Liek je určený na zmiernenie príznakov chrípky a akútneho zápalu horných dýchacích ciest, odstraňuje bolesti v hrdle, uvoľňuje upchatý nos aj prínosné dutiny, odstraňuje bolesti hlavy, svalov aj kĺbov. Obsahuje: 1. Paracetamol, liečivo proti bolesti a horúčke, ktoré odstraňuje bolesti v hrdle, bolesti hlavy, svalov aj kĺbov a znižuje horúčku. 2. Fenylefrín, ktorý uvoľňuje upchatý nos aj prinosové dutiny a tak uľahčuje dýchanie. 3. Vitamín C, ktorý pri chrípke a prechladnutí telu často chýba.", "kategoria": "lieky", "category": "dychanie", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 7.79
+    },
+    {
+        "id": 4, "obrazok": "fotky/lieky4.jpg", "meno": "Muconasal plus", "cena": 5.27, "popis": "Liek obsahuje liečivo tramazolíniumchlorid, ktoré zužuje cievy a tým zmenšuje opuch nosovej sliznice, čo vedie k dlhodobému spriechodneniu nosa. Používa sa: na zmenšenie opuchu nosovej sliznice spojeného s bežnou nádchou a sennou nádchou, na základe lekárskeho odporúčania na uvoľnenie hlienov pri zápale prínosových dutín a infekcii stredného ucha.", "kategoria": "lieky", "category": "dychanie", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 6.59
+    },
+    {
+        "id": 5, "obrazok": "fotky/lieky5.jpg", "meno": "Paralen 500", "cena": 1.45, "popis": "Paracetamol, liečivo obsiahnuté v lieku, pôsobí proti bolesti a znižuje zvýšenú telesnú teplotu. Liek nezhoršuje žalúdočné ťažkosti a nevyvoláva krvácanie, môžu ho užiť aj chorí s vredmi žalúdka a dvanástnika a chorí, ktorí neznášajú kyselinu acetylsalicylovú. Liek je určený na zníženie horúčky a bolesti pri chrípke, nachladnutí a iných infekčných ochoreniach. Liek je tiež vhodný pri bolestiach rôzneho pôvodu, napr. pri bolestiach hlavy, zubov, pri bolestivej menštruácii, bolesti hrdla a bolesti pohybového ústrojenstva nezápalového pôvodu.", "kategoria": "lieky", "category": "bolest", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 1.61
+    },
+    { 
+        "id": 6, "obrazok": "fotky/lieky6.jpg", "meno": "Iberogast", "cena": 12.69, "popis": "Rastlinný liek je určený na liečbu žalúdočno-črevných ochorení, ktoré sa prejavujú prevažne ťažkosťami ako sú bolesti žalúdka a brucha, pálenie záhy, pocit plnosti, žalúdočno-črevné kŕče a nevoľnosť. Liek reguluje napätie a hybnosť čriev. Uvoľňuje nepríjemné a bolestivé sťahy svaloviny žalúdka a čriev. Je určený aj na zlepšenie funkcie a hybnosti pri ochoreniach ako syndróm dráždivého žalúdka a dráždivého čreva a na podpornú liečbu ťažkostí pri zápale sliznice žalúdka (gastritída).", "kategoria": "lieky", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 7, "obrazok": "fotky/lieky7.jpg", "meno": "Smecta", "cena": 3.99, "popis": "Liek obsahuje diosmektit. Používa sa na liečbu: príznakov náhlej hnačky u detí vo veku od 2 rokov a u dospelých v spojení s podávaním rehydratačného roztoku, príznakov dlhodobej hnačky u dospelých, bolesti spojenej s funkčnými ochoreniami čreva u dospelých.", "kategoria": "lieky", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 8, "obrazok": "fotky/lieky8.jpg", "meno": "Claritine 10mg", "cena": 6.39, "popis": "Liek obsahuje liečivo loratadín, ktoré patrí do skupiny liekov nazývanej „antihistaminiká“. Liek zmierňuje príznaky spojené s alergickou rinitídou (napríklad senná nádcha), ako sú kýchanie, výtok z nosa alebo svrbenie nosa a pálenie alebo svrbenie očí. Liek možno tiež použiť ako pomoc pri zmiernení príznakov žihľavky (svrbenie, začervenanie a počet a veľkosť vyrážok).", "kategoria": "lieky", "category": "dychanie", "mnozstvo": 1
+    },
+    {
+        "id": 9, "obrazok": "fotky/doplnky1.jpg", "meno": "Vitar vitamín C (1000mg) s rakytníkom", "cena": 10.24, "popis": "Výživový doplnok - tablety s obsahom vitamínu C 1000 mg s postupným uvoľňovaním a rakytníkom. Vitamín C prispieva k: normálnej funkcii imunitného systému. Aktívne látky v 1 tablete: vitamín C (kyseliná L-askorbová) - 1 000 mg (1 250 %*); extrakt z rakytníka rešetlakového (Hippophae rhamnoides) - 50 mg.      *RVH - referenčná výživová hadnota", "kategoria": "doplnky", "category": "imunita", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 12.05
+    },
+    {
+        "id": 10, "obrazok": "fotky/doplnky2.jpg", "meno": "Celaskon 250mg", "cena": 3.65, "popis": "Liek obsahuje vitamín C (vitamín C je kyselina askorbová) v každej tablete. Ľudský organizmus si vitamín C nevie sám vytvárať, preto sa musí prijímať v potrave alebo dodávať formou vitamínových prípravkov.Vitamíny sú zložité látky nevyhnutné pre mnohé funkcie v organizme. Vitamín C patrí medzi vitamíny rozpustné vo vode. Jeho úloha v organizme je mnohostranná: umožňuje činnosť rôznych enzýmov v organizme, je súčasťou antioxidačného systému. Je dôležitý pre rast a udržiavanie zdravých kostí, zubov, ďasien, väziva a krvných ciev, pre tvorbu niektorých látok, ktoré sa zúčastňujú na prenose nervových vzruchov medzi nervovými bunkami, pre tvorbu hormónov nadobličiek, pre vstrebávanie železa z potravy, rovnako je nutný pre normálnu imunitnú odpoveď na infekciu a pre hojenie rán. Mierny nedostatok vitamínu C sa prejavuje slabosťou, celkovou únavou a bolesťou, opuchmi ďasien a krvácaním z nosa, závažnejší nedostatok spôsobuje skorbut a anémiu. Liek užívajú dospelí a deti na prevenciu alebo liečbu stavov nedostatku vitamínu C v organizme, najmä v období zvýšených nárokov (v detstve počas rastu, v tehotenstve, pri dojčení, pri namáhavej práci, športe, infekčných chorobách, v rekonvalescencii po infekčných chorobách, po ťažkých úrazoch, popáleninách, rozsiahlych operáciách, pri jednostrannej výžive, u starých ľudí, u fajčiarov a pod.). V kombinácii s inými antioxidantmi je podávaný na obmedzenie škodlivého vplyvu voľných radikálov (antioxidačné pôsobenie). Liek je určený pre dospelých a deti od 6 rokov.", "kategoria": "doplnky", "category": "imunita", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 4.29
+    },
+    {
+        "id": 11, "obrazok": "fotky/doplnky3.jpg", "meno": "Devit 2000", "cena": 9.89, "popis": "Výživový doplnok. Želatínové kapsuly s obsahom vitamínu D3 (cholekalciferol) na vnútorné použitie. 1 kapsula obsahuje 50 µg vitamínu D3.", "kategoria": "doplnky", "category": "imunita", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 10.99
+    },
+    {
+        "id": 12, "obrazok": "fotky/doplnky4.jpg", "meno": "Magne B6 Forte", "cena": 9.99, "popis": "Výživový doplnok vo forme tabliet obsahuje horčík 100 mg a vitamín B6 2 mg. Horčík a vitamín B6 prispievajú: 1.) k zníženiu únavy a vyčerpania, 2.) k správnej látkovej premene dôležitej pre tvorbu energie, 3.) k správnemu fungovaniu nervového systému, 4.) k správnej funkcii psychiky.", "kategoria": "doplnky", "category": "pohyb", "mnozstvo": 1
+    },
+    {
+        "id": 13, "obrazok": "fotky/doplnky5.jpg", "meno": "Magnesium 250mg eff.", "cena": 3.99, "popis": "Liek obsahuje horčík a kyselinu askorbovú (vitamín C). Bez odporučenia lekárom sa liek užíva:   ako doplnok dennej dávky horčíka pri jeho zníženom príjme v dôsledku nedostatočnej výživy alebo zvýšenej námahe. Na odporučenie lekárom sa liek užíva:  pri liečbe chorobných stavov následkom nedostatku horčíka, na prevenciu chorobných stavov následkom nedostatku horčíka, ako doplnková liečba pri určitých chorobných stavoch.", "kategoria": "doplnky", "category": "pohyb", "mnozstvo": 1
+    },
+    { 
+        "id": 14, "obrazok": "fotky/doplnky6.jpg", "meno": "DIAMizin Gurmar", "cena": 22.19, "popis": "Výživový doplnok s obsahom extraktu z rastliny gymnema (Gymnema Sylvestre) 200 mg v jednej kapsule.", "kategoria": "doplnky", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 15, "obrazok": "fotky/doplnky7.jpg", "meno": "Imunoglukan P4H", "cena": 10.73, "popis": "Výživový doplnok pre dlhodobé užívanie. Hlavnou účinnou zložkou je IMG® vo vhodnej kombinácii s vitamínom C. Tekutá forma bola vyvinutá špeciálne pre deti a dospelých uprednostňujúcich tekuté formy prípravkov. IMG® je vysoko purifikovaná prírodná látka, komplex biologicky aktívnych polysacharidov na báze pleuranu izolovaný z Pleurotus ostreatus - Hliva ustricovitá. Vitamín C prispieva k správnemu fungovaniu imunitného systému, k ochrane buniek pred oxidačným stresom, k zníženiu vyčerpania a únavy. 1 ml obsahuje: IMG® 10 mg (RVH* neurčená), vitamín C 10 mg (12,5% RVH*) ", "kategoria": "doplnky", "category": "imunita", "mnozstvo": 1, "categoryExtra": "akcia", "povodnaCena": 11.29
+    },
+    {
+        "id": 16, "obrazok": "fotky/doplnky8.jpg", "meno": "Milgamma N", "cena": 12.89, "popis": "Liek je určený na liečbu neuropatie u dospelých pacientov. Používa sa na liečbu zápalových a bolestivých ochorení nervov ako je diabetická a alkoholová polyneuropatia (poškodenie nervov pri cukrovke a alkoholizme), migréna, bolestivé natiahnutie svalov (muskuloskeletálna bolesť), bolestivé postihnutie koreňov periférnych nervov (postihnutie pri vysunutí medzistavcovej platničky alebo ako výsledok degeneratívneho ochorenia chrbtice), skalenový syndróm (útlak nervovej spleti v krčnej oblasti), syndróm rameno-ruka (bolestivý syndróm v oblasti hornej končatiny), pásový opar (herpes zoster), obrna (paréza) tvárového nervu. Používa sa tiež pri predĺženej rekonvalescencii (zotavovaní sa) a v geriatrii.", "kategoria": "doplnky", "category": "pohyb", "mnozstvo": 1 
+    },
+    {
+        "id": 17, "obrazok": "fotky/kozmetika1.jpg", "meno": "Avene XeraCalm AD", "cena": 14.89, "popis": "Avène XeraCalm A.D Upokojujúca koncentrovaná starostlivosť okamžite upokojuje intenzívne a lokalizované pocity svrbenia a podráždenia suchých miest a zmierňuje závažné formy suchosti kože celej rodiny (dojčatá, deti, dospelí). Sterilná kozmetika - 0% konzervantov.", "kategoria": "kozmetika", "mnozstvo": 1
+    },
+    {
+        "id": 18, "obrazok": "fotky/kozmetika7.jpg", "meno": "Vitalos balzam na pery (cherry)", "cena": 1.59, "popis": "Vitamínový balzam na suché a popraskané pery.", "kategoria": "kozmetika", "category": "koza", "mnozstvo": 1
+    },
+    {
+        "id": 19, "obrazok": "fotky/kozmetika3.jpg", "meno": "VICHY Neovadiol (nočný)", "cena": 29.99, "popis": "Nočný krém pre obdobie perimenopauzy. Vypĺňajúci revitalizačný nočný krém. Hormonálne zmeny v období okolo menopauzy urýchľujú starnutie pleti, ktorá stráca elasticitu a hustotu. Kontúry sú menej vyrysované. Návaly tepla môžu spôsobovať nepríjemné pocity na pleti. Laboratóriá vyvinuli ľahký, osviežujúci nočný krém s obsahom Termálnej vody vulkanického pôvodu obohatenej o 15 minerálov, Pro-Xylanu, výťažku z kasie a kyseliny hyalurónovej. Okamžite ochladzuje pleť až o 2,7 °C*, zlepšuje súdržnosť pleti a vyhladzuje kontúry. * Inštrumentálny test: 24 žien - 45 sekúnd po aplikácii.", "kategoria": "kozmetika", "mnozstvo": 1
+    },
+    {
+        "id": 20, "obrazok": "fotky/kozmetika4.jpg", "meno": "La Roche-Posay Lipikar", "cena": 17.79, "popis": "Vhodné na oslabenú pokožku s pocitmi napínania a stratou vláčnosti. Vhodné pre všetky vekové kategórie. Relipidačné telové mlieko hydratuje pokožku a zároveň zabraňuje podráždeniu a svrbeniu pokožky, bez parabénov.", "kategoria": "kozmetika", "category": "koza", "mnozstvo": 1
+    },
+    {
+        "id": 21, "obrazok": "fotky/kozmetika5.jpg", "meno": "Nizoral šampón 2%", "cena": 8.99, "popis": "Liek vo forme šampónu s antimykotickým účinkom. Pomáha pri infekciách kože vo vlasoch, na tvári, na hrudníku. Vhodný pri lupinách, seborei.", "kategoria": "kozmetika", "mnozstvo": 1
+    },
+    { 
+        "id": 22, "obrazok": "fotky/kozmetika6.jpg", "meno": "Vlasové hnojivo šampón", "cena": 8.99, "popis": "Unikátny prípravok prinášajúci účinnú pomoc pri nadmernom vypadávaní, rednutí a poškodení vlasov. Šampón na vlasy svojím zložením spája účinky kofeínu a komplexu Husoplex (extrakt žihľavy dvojdomej, extrakt zeleného čaju, extrakt silymarínu). Šampón je vhodný pre zlepšenie vzhľadu a kondície vlasov u žien aj mužov.", "kategoria": "kozmetika", "mnozstvo": 1
+    },
+    {
+        "id": 23, "obrazok": "fotky/kozmetika2.jpg", "meno": "Bioderma Sebium Global Cover", "cena": 15.49, "popis": "Kozmetický prípravok určený na starostlivosť o problematickú pleť (stredné až ťažké formy akné). Zamedzuje tvorbe vyrážok, reguluje nadmernú tvorbu mazu.", "kategoria": "kozmetika", "mnozstvo": 1
+    },
+    {
+        "id": 24, "obrazok": "fotky/kozmetika8.jpg", "meno": "Avene krém SPF 30", "cena": 18.99, "popis": "Krém SPF 30 zaisťuje vysokú slnečnú ochranu suchej až veľmi suchej citlivej pleti tváre.", "kategoria": "kozmetika", "category": "koza", "mnozstvo": 1 
+    },
+    {
+        "id": 25, "obrazok": "fotky/potraviny1.jpg", "meno": "PROMIX-PK zmes na bezlepkové pečivo", "cena": 4.49, "popis": "PROMIX®-PK - bezlepková zmes na prípravu jemného pečiva, halušiek, knedlí a bežné kulinárske použitie v domácnosti - prípravu zásmažky a zahusťovanie pokrmov. Možno tiež použiť na prípravu chleba a pečiva.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 26, "obrazok": "fotky/potraviny2.jpg", "meno": "Schär PENNE bezlepkové cestoviny", "cena": 2.19, "popis": "Cestoviny bezvaječné bezgluténové (Penne - v tvare rúrky, šikmo strihané). Dietetická potravina vyrobená špeciálne pre ľudí trpiacich neznášanlivosťou gluténu, vyrobená z bezlepkových a bezpšeničných surovín.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 27, "obrazok": "fotky/potraviny3.jpg", "meno": "Nutrikaša probiotic (banán)", "cena": 3.49, "popis": "Instantná zmes na prípravu ryžovej kaše s mrazom sušeným banánom. Balené po jednotlivých porciách. Obsahuje vlákninu, 10 vitamínov, minerály a 5mld Bacillus coagulans v jednej porcii.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 28, "obrazok": "fotky/potraviny4.jpg", "meno": "Schär Quadritos", "cena": 2.19, "popis": "Oblátky bezgluténové kakaové máčané v horkej čokoláde s kakaovou náplňou.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 29, "obrazok": "fotky/potraviny5.jpg", "meno": "Herbex Urologický čaj s brusnicami", "cena": 2.69, "popis": "Urologický čaj je bylinná zmes pre správnu funkciu močových ciest.", "kategoria": "potraviny", "mnozstvo": 1
+    },
+    { 
+        "id": 30, "obrazok": "fotky/potraviny6.jpg", "meno": "Fyto Tatranská priedušková zmes", "cena": 2.79, "popis": "Čaj blahodárne pôsobí na dýchacie ústrojenstvo, najme v období prechladnutia a chrípky.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 31, "obrazok": "fotky/potraviny7.jpg", "meno": "Nutridrink multifibre", "cena": 7.19, "popis": "Nutridrink MultiFibre s jahodovou príchuťou. Dietetická potravina na osobitné medicínske účely. Nutridrink Multi Fibre je nutrične kompletná tekutá výživa,s vysokým obsahom energie, s vlákninou. Určené pre diétny režim pri podvýžive súvisiacej s ochorením. Len na enterálne použitie. Bezgluténový prípravok.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1
+    },
+    {
+        "id": 32, "obrazok": "fotky/potraviny8.jpg", "meno": "topnatur Pohánkový nápoj", "cena": 3.59, "popis": "Pohankový nápoj obsahuje tepelne upravenú pohánkovú múku. Pohánka prispieva k normálnej funkcii dýchacieho a kardiovaskulárneho systému. S obsahom inulínu. Lahodná chuť a vôňa.", "kategoria": "potraviny", "category": "travenie", "mnozstvo": 1 
+    },
+    {
+        "id": 33, "obrazok": "fotky/pomocky1.jpg", "meno": "Microlife BP A2 Accurate tlakomer", "cena": 22.29, "popis": "Plnoautomatický tlakomer s manžetou s meraním na ramene, vybavený PAD technológiou pre včasné rozpoznanie arytmie srdca. Klinicky overená presnosť meraní v domácich podmienkach.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 34, "obrazok": "fotky/pomocky2.jpg", "meno": "OMRON M3 ramenný tlakomer", "cena": 66.19, "popis": "Tlakomer na rameno s mäkkou Easy manžetou (pre obvod 22-42cm - bežné aj silné paže) štandardnej konštrukcie. Počas bežného merania krvného tlaku, vás dokáže upozorniť na prípadný nepravidelný pulz a pamätá si údaje pre 2 osoby. Technológia IntelliSense zabezpečí najjemnejšie stlačenie vašej paže. Tlakomer je klinicky overený.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 35, "obrazok": "fotky/pomocky3.jpg", "meno": "Microlife NC 200 - bezkontaktný teplomer", "cena": 33.49, "popis": "Pokrokový bezkontaktný teplomer s meraním telesnej teploty v zaručene správnej vzdialenosti. Patentovaná unikátna technológia zabezpečí meranie automaticky, keď sa sonda nachádza v stanovenej vzdialenosti od povrchu tela. Modrý lúč osvetľuje miesto merania a indikuje priebeh merania pre ľahké použitie cez deň aj v noci. Špeciálny indikátor umožňuje presné samomeranie telesnej teploty.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 36, "obrazok": "fotky/pomocky4.jpg", "meno": "OMRON Flex temp smart (teplomer)", "cena": 6.99, "popis": "Digitálny teplomer so zvukovým signálom. Doba merania v rekte 10 sekúnd. Pamäť posledného merania. Pružná špička. Vodotesný.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 37, "obrazok": "fotky/pomocky5.jpg", "meno": "Klasický liehový teplomer", "cena": 4.49, "popis": "Klasický lekársky sklenený bezortuťový teplomer s Gáliom. Teplomery plnené gáliom idú ťažšie striasť ako teplomery ortuťové. Je to spôsobené vlastnosťou gália. Nie je to porucha. Pri striasaní je teplomer potrebný pevne držať čo najviac na jeho konci t.j. približne 0,5-1cm za číslom 42. Striasanie je neúčinné ak je držaný v strede alebo na začiatku. Netoxický, šetrný k životnému prostrediu. Vodotesný - jednoduchá dezinfekcia.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    { 
+        "id": 38, "obrazok": "fotky/pomocky6.jpg", "meno": "SENI soft podložky 60x60/5ks", "cena": 2.49, "popis": "Hygienické podložky sú určené: 1.) počas výmeny plienok, 2.) vhodný doplnok k jednorazovým absorpčným pomôckam, 3.) pod ležiacich pacientov (pod chorých, inkontinentných pacientov na ochranu lôžka), 4.) podložka na vozík a kreslo, vhodná počas procedúr, 5.) zabezpečenie postele a posteľnej bielizne pred zašpinením napr. pre pacientov s dekubitmi, ulceráciami alebo ekzémovými zmenami vyžadujúcimi aplikáciu mastí a roztokov.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 39, "obrazok": "fotky/pomocky7.jpg", "meno": "SVORTO bandáž na hallux valgus (pravá/veľ.36-40)", "cena": 8.49, "popis": "Nočná bandáž slúži pre rovnanie vbočeného palca (Hallux Valgus). Bandáž je kombináciou dlahy a mäkkej koženej pracky s upínacou páskou zo suchého zipsu, ktorý umožňuje stupňovať tlak na vyrovnanie osi palca. Nočná bandáž je veľmi účinný spôsob korekcie, pôsobiacej najmä v noci počas spánku. Je tvarovaná zvlášť pre ľavú a pravú nohu. Nie je určená pre chôdzu.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 40, "obrazok": "fotky/pomocky8.jpg", "meno": "Autolekárnička", "cena": 11.49, "popis": "Autolekárnička pre osobnú a nákladnú dopravu - fóliovaná, samolepiaca etiketa s označením autolekárnička. Ide o súpravu sterilných a nesterilných zdravotníckych pomôcok v plastovom obale. Obsahuje štítok s obsahom balenia.Súprava je určená na poskytnutie dočasnej prvej predlekárskej pomoci osobám, ktorý sú účastníkmi cestnej premávky a podobne. Určená pre kategóriu motorových vozidiel M1, N, T, C, Ps.", "kategoria": "pomocky", "mnozstvo": 1
+    },
+    {
+        "id": 41, "obrazok": "fotky/veterina1.jpg", "meno": "Geloren želatínové kocky", "cena": 18.99, "popis": "Doplnkové krmivo pre psy. Vo forme ochutených žuvacích kociek s vysokou koncentráciou kyseliny hyalurónovej, chondroitín sulfátu, hydrolyzovaného kolagénu a želatíny. Je vhodné pre veľké plemená psov.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 42, "obrazok": "fotky/veterina2.jpg", "meno": "Drontal Dog flavour (2tbl)", "cena": 6.49, "popis": "Liek určený pre psy. Liečba zmiešaných infekcií spôsobených hlístovcami a pásomnicami nasledujúcich druhov: Hlístovce; Škrkavky (dospelé a neskoré larválne formy): Toxocara canis, Toxascaris leonina; Machovce (dospelé): Uncinaria stenocephala, Ancylostoma caninum; Tenkohlavce (dospelé): Trichuris vulpis; Pásomnice (dospelé a neskoré larválne formy): Echinococcus granulosus, Echinococcus multilocularis, Dipylidium caninum, Taenia spp., Mesocestoides spp. Liečba infekcií spôsobených protozoami Giardia spp. u šteniat a dospelých psov. Liek nie je viazaný na veterinárny predpis. Doplňujúca informácia od dodávateľa: odčervovacie tablety, v tvare kosti a viac ochutené.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 43, "obrazok": "fotky/veterina3.jpg", "meno": "Foresto Obojok pre mačky a psy", "cena": 32.99, "popis": "Veterinárny liek: antiparazitárny obojok s repelentným účinkom.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 44, "obrazok": "fotky/veterina4.jpg", "meno": "Fypryst 2,5mg/ml", "cena": 6.49, "popis": "Liečba a prevencia infestácií bĺch a kliešťov u mačiek a psov, ako aj liečba a kontrola alergickej reakcie po uhryznutí blchami (FAD) u mačiek a psov. Liek je účinný proti Ixodes spp. vrátane Ixodes ricinus, dôležitý vektor lymskej boreliózy. Liek kontroluje napadnutie švolou Trichodectes canis, ktorá napáda psov a napadnutie švolou Felicola substratus, ktorá napáda mačky. Liek je účinný 3 mesiace proti blchám u psov a 2 mesiace u mačiek, v závislosti od prostredia. Liek je účinný 1 mesiac u psov a mačiek pri zamorení kliešťami, v závislosti od prostredia.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 45, "obrazok": "fotky/veterina5.jpg", "meno": "Alavis pre kone", "cena": 29.90, "popis": "Veterinárny prípravok proti bolesti, zápalu a edému. Zlepšuje funkciu pohybového aparátu koní. Odstraňuje prebiehajúci zápal a edém, podporuje vstrebávanie chondroprotektívnych látok a regeneráciu svalov, väzov a šliach. Podávanie prípravku zlepšuje fyzickú výkonnosť a pri dostihových koňoch sa zaznamenalo významné zlepšenie tréningových časov. Nejde o doping, preto môže byť tento prípravok podávaný športovým koňom počas celej dostihovej sezóny.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    { 
+        "id": 46, "obrazok": "fotky/veterina6.jpg", "meno": "Frontline Combo spot-on pre psy", "cena": 8.99, "popis": "Roztok na vonkajšiu aplikáciu na kožu zvieraťa v  pipete. Určené na liečbu a prevenciu pred napadnutím blchami, kliešťami a švolami u psov, ničí všetky vývojové štádiá bĺch. Liečba a kontrola alergie na blšie uhryznutie (FAD) u psov. Na použitie pre psov a šteňatá od 8 týždňov veku. Liek sa môže aplikovať v období gravidity aj laktácie.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 47, "obrazok": "fotky/veterina7.jpg", "meno": "ARPALIT Neo šampón", "cena": 8.49, "popis": "Jemný šampón na umývanie srsti kožušinových zvierat s vitamínmi, s extraktom z listov čajovníka čínskeho, olivovým olejom a elastínom. Šampón má priaznivý účinok na zdravie a krásu srsti zvierat. Obsahuje vitamíny B3 a B5, olivový olej a elastín, nevysušuje a nedráždi pokožku, jeho pH je neutrálne. Srsť po pravidelnom ošetrení získava jemnosť, pevnosť, pružnosť, hlboký lesk a jasné sfarbenie.", "kategoria": "veterina", "mnozstvo": 1
+    },
+    {
+        "id": 48, "obrazok": "fotky/veterina8.jpg", "meno": "Dronspot 30mg/7,5mg spon-on pre malé mačky", "cena": 13.99, "popis": "Odčervenie vo forme pipety je vhodné pre mačky, ktoré nie sú schopné prehltnúť vnútorne podávané lieky, i pre majiteľov, ktorí preferujú pohodlie pri odčervení.", "kategoria": "veterina", "mnozstvo": 1 
+    },
+    {
+        "id": 49, "obrazok": "fotky/mocovy1.jpg", "meno": "URINAL Akut forte 20 kapsúl", "cena": 16.59, "popis": "1.) Zlatobyľ prispieva k normálnej funkcii vylučovania moču. 2.) Zlatobyľ pomáha udržiavať zdravý močový mechúr a dolné močové cesty. 3.) Vitamín D podporuje správnu funkciu imunitného systému", "category": "systemMaP", "mnozstvo": 1
+    },
+    {
+        "id": 50, "obrazok": "fotky/mocovy2.jpg", "meno": "GYNIMUN Dual protect 30 kapsúl", "cena": 13.99, "popis": "Výživový doplnok pre ženy s obsahom živých baktérií. Obsahuje tri starostlivo vybrané patentované kmene humánnych (teda u človeka prirodzene sa vyskytujúcich) laktobacilov, ktoré môžu byť prospešné na rôznych miestach Vášho organizmu.", "category": "systemMaP", "mnozstvo": 1 
+    },
+    {
+        "id": 51, "obrazok": "fotky/mocovy3.jpg", "meno": "CLAVIN Original 8 + 4 tablety ZADARMO", "cena": 24.99, "popis": "Clavin® Original je prípravok s chráneným zložením a priaznivým pôsobením na prekrvenie penisu a erekciu.(1,2). Ako účinnú látku obsahuje Clavertin 21 - špeciálne galenicky upravenú zmes L-arginínu, L-citrulínu, tribulusu a crocusu. Synergické pôsobenie týchto látok zaisťuje maximálnu účinnosť prípravku.                                                                                                             Účinnosť Clavin® Original - výživového doplnku zaisťuje obsah jednotlivých zložiek v 4 kapsulách: 1) Tribulus Terrestris pre zlepšenie prekrvenia, zvýšenie sexuálnej túžby a libida (200 mg); 2) Crocus pre stimuláciu libida a zlepšenie prekrvenia (30 mg); 3) Selén prispieva k normálnej funkcii imunitného systému a prispieva k ochrane buniek pred oxidačným stresom (24 μg = 44 % RHP); 4) Zinok prispieva k normálnej plodnosti a reprodukcii, prispieva k normálnej funkcii imunitného systému a prispieva k ochrane buniek pred oxidačným stresom (3,2 mg = 32 % RHP).    Vysvetlivky: (1) - Crocus sativus (šafrán), (2) - Tribulus terrestris (kotvičník)", "category": "systemMaP", "mnozstvo": 1 
+    },
+    {
+        "id": 52, "obrazok": "fotky/matka1.jpg", "meno": "FEMIBION 2 Tehotenstvo 28 tabliet + 28 kapsúl", "cena": 20.89, "popis": "Výživový doplnok Femibion 2, vyvinutý špeciálne pre potreby Vás a Vášho bábätka, je určený tehotným ženám od 13. týždňa tehotenstva až do pôrodu. V tomto období sa začína fáza neuveriteľne rýchleho rastu Vášho dieťatka. Preto je vhodné dopĺňať foláty (Metafolin® & kyselina listová) a omega-3 mastnú kyselinu DHA. Kyselina listová sa významne podieľa na delení buniek, krvotvorbe a prispieva k rastu zárodočných tkanív vrátane placenty. Placenta potom sprostredkováva prenos živín k nenarodenému dieťaťu.", "category": "matkaDieta", "mnozstvo": 1 
+    },
+    {
+        "id": 53, "obrazok": "fotky/matka2.jpg", "meno": "GALVEX Pasta s rybím olejom 100 g", "cena": 1.69, "popis": "Liek obsahuje rybí olej a oxid zinočnatý. Patrí do skupiny kožných liekov (dermatologík). Používa sa na ošetrenie: odrenín a drobných poranení kože, ľahkých popálenín a rádiodermatitíd (chorobách kože po ožarovaní), vredov predkolenia (ulcus cruris), preležanín, amputačných pahýľov, na fisúry (trhlinky) v okolí konečníka, na prstoch alebo prsných bradavkách, zaparenín a pri plienkovom zápale pokožky u dojčiat", "category": "matkaDieta", "mnozstvo": 1  
+    },
+    {
+        "id": 54, "obrazok": "fotky/matka3.jpg", "meno": "BIOGAIA ProTectis kvapky 10 ml", "cena": 17.99, "popis": "Dietetická potravina na osobitné medicínske účely. Pre diétny režim pri poruchách zažívania, ako je napríklad opakované zvracanie (regurgitácia), znížená pohyblivosť čriev alebo dojčenská kolika. Kvapky BioGaia obsahujú živé aktívne baktérie Lactobacillus reuteri (L.reuteri) Protectis rozmiešané v oleji.", "category": "matkaDieta", "mnozstvo": 1  
+    },
+    {
+        "id": 55, "obrazok": "fotky/cievy1.jpg", "meno": "PRIESSNITZ Žilná a cievna výživa forte 60 kapsúl +125 ml", "cena": 14.79, "popis": "Výživový doplnok v tobolkách, ktorý obsahuje obohatenú kombináciu prírodných látok: • Hesperidín a Diosmín - sú aktívne bioflavonoidy, ktoré sa nachádzajú predovšetkým v šlupkách citrusových plodov. • Katechiny - z extraktu zo zeleného čaju zlepšujú pružnosť ciev a sú známe svojimi antioxidačnými vlastnosťami. • R.I.M. concentrate - je upravená jedinečná kombinácia beta-glukánov z pivných kvasníc a trans-resveratrolu z viniča hroznorodého. Práve vinič hroznorodý napomáha k zdravším žilám a obmedzuje pocity ťažkých nôh. Vitamíny skupiny B - kyanokobalamín, kyselina listová, kyselina pantothenová a pyridoxín. Vitamíny B6 a B12 pomáhajú k tvorbe červených krviniek.", "category": "cievy", "mnozstvo": 1 
+    },
+    {
+        "id": 56, "obrazok": "fotky/cievy2.jpg", "meno": "DETRALEX 500 mg 60 tabliet", "cena": 14.79, "popis": "Bioflavonoidy sú liečivá lieku stabilizujúce kapiláry. Liek sa používa u dospelých na: •liečbu žilovo-lymfatickej nedostatočnosti s príznakmi (pocit ťažkých nôh, ranný výskyt pocitu unavených nôh, bolesť), •liečbu funkčných príznakov akútneho stavu hemoroidálneho ochorenia. ", "category": "cievy", "mnozstvo": 1  
+    },
+    {
+        "id": 57, "obrazok": "fotky/cievy3.png", "meno": "JAMIESON Omega-3 select 1000 mg 150 + 50 kapsúl ZADARMO", "cena": 23.29, "popis": "Obsahuje esenciálne mastné kyseliny získané zo sardiniek a sardel. Kyselina dokozahexaénováprispieva k správnej činnosti mozgu a k dobrému zraku. Kyselina eikozapentaénová a dokozahexaénová podporujú optimálnu činnosť srdca. (Priaznivý účinok sa dosiahne pri dennom príjme 250 mg EPA a DHA.)", "category": "cievy", "mnozstvo": 1  
+    },
+    {
+        "id": 58, "obrazok": "fotky/zuby1.jpg", "meno": "CORSODYL 0,1% roztok 200 ml", "cena": 4.99, "popis": "Roztok: je určený na výplachy ústnej dutiny na intenzívnu krátkodobú liečbu akútnych stavov a jednorázové použitie, na liečbu akútneho zápalu ďasien a infekcií slizníc ústnej dutiny vrátane áft, na dezinfekciu úst pred a na podporu hojenia po chirurgických výkonoch v ústach, zastavuje tvorbu zubného povlaku a ničí už vytvorený povlak, pôsobí proti mnohým baktériam, plesňam a niektorým vírusom.", "category": "zuby", "mnozstvo": 1  
+    },
+    {
+        "id": 59, "obrazok": "fotky/zuby2.jpg", "meno": "LACALUT Aktiv zubná pasta 75 ml", "cena": 3.49, "popis": "• medicinálna zubná pasta na ochranu pred parodontitídou • účinnou látkou je aluminiumlaktát, ktorý má výrazne adstringentný (sťahujúci) účinok • posilňuje parodont a zastavuje krvácanie z ďasien • Alantoín a bisabolol zabezpečujú protizápalový účinok • Fluorid spevňuje zubnú sklovinu a chráni pred vznikom zubného kazu", "category": "zuby", "mnozstvo": 1   
+    },
+    {
+        "id": 60, "obrazok": "fotky/zuby3.jpg", "meno": "COREGA Original extra silný XL fixačný krém 70 g", "cena": 6.49, "popis": "Fixačný krém na zubné náhrady: • vhodný na horné aj dolné celkové náhrady • má vysokú silu fixácie a celodenný účinok • zvyšuje silu zhryzu • bráni vnikaniu častíc potravy pod náhradu • chráni sliznicu protézneho lôžka", "category": "zuby", "mnozstvo": 1 
+    },
+    {
+        "id": 61, "obrazok": "fotky/oci1.jpg", "meno": "CORNEREGEL Očný gél 10 g", "cena": 8.49, "popis": "Liek lieči nezápalové ochorenia očnej rohovky a podporuje hojenie poranenej rohovky alebo spojovky. Použitie: Liečba nezápalových ochorení očnej rohovky (keratopatia), napríklad dystrofia rohovky (porucha výživy rohovky), degenerácia rohovky, recidivujúce erózie rohovky (olupovanie rohovky) a rohovkové lézie (poranenie rohovky) v súvislosti s používaním kontaktných šošoviek. Doplnková liečba hojenia poškodenej rohovky a spojovky poleptaním alebo popálením. Doplnková liečba pri špecifickej liečbe infekčných procesov na rohovke, ktoré majú bakteriálny, vírusový alebo plesňový pôvod.", "category": "orl", "mnozstvo": 1  
+    },
+    {
+        "id": 62, "obrazok": "fotky/oci2.jpg", "meno": "SENSILUX 5 mg 10 ml", "cena": 3.49, "popis": "Liek obsahuje tetryzolíniumchlorid, ktorý zmierňuje opuch, prekrvenie spojovky, pocit pálenia, podráždenia, svrbenia a bolesti, prispieva k úľave pri menších podráždeniach očí, ktoré nie sú infekčného pôvodu. Liek vyvoláva dlhodobé stiahnutie ciev (vazokonstrikciu) očných spojoviek. Používa sa: pri opuchu, prekrvení a podráždení očných spojoviek vyvolanom vetrom, prachom, svetlom, dymom, chlórovanou vodou, kozmetickými prípravkami alebo kontaktnými šošovkami. Na odstránenie príznakov alergických zápalových ochorení ako je senná nádcha a precitlivenosť na peľ.", "category": "orl", "mnozstvo": 1 
+    },
+    {
+        "id": 63, "obrazok": "fotky/oci3.jpg", "meno": "GALVEX Ušné kvapky Burow 20 g", "cena": 2.49, "popis": "Ušná roztoková instilácia. Podporný prípravok pri akútnom zápale stredného ucha.", "category": "orl", "mnozstvo": 1  
+    },
+    {
+        "id": 64, "obrazok": "fotky/vlasy2.jpg", "meno": "PARANIT Extra silný šampón 100 ml + hrebeň 1 set", "cena": 17.49, "popis": "Paranit Extra Silný šampón pre ošetrenie a ochranu má preukázaný 100 % účinok proti všiam v priebehu 5 minút a dokázateľne zaisťuje ochranu pred možnou nákazou.", "category": "vlasy", "mnozstvo": 1 
+    },
+    {
+        "id": 65, "obrazok": "fotky/vlasy3.jpg", "meno": "NATURVITA BIOSIL Plus 60 tabliet", "cena": 4.49, "popis": "Výživový doplnok s obsahom vitamínov a minerálov.", "category": "vlasy", "mnozstvo": 1 
+    }
+]

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css"/>
+
+    <title>Lekáreň</title>
+
+</head>
+<body>
+    <div id="hlava"></div>
+    <div id="podHlavou"></div>
+    <div id="liekyNadpis"></div>
+    <div id="liekyZoznam"></div>
+    <div id="pata"></div>
+
+<script type="text/babel">
+
+/* Hlavička */
+
+    class Header extends React.Component{
+
+        constructor(props){
+            super(props)
+            this.state = {data: [], hladanyVyraz: ""};
+        }
+
+        componentDidMount(){
+            let testovany = JSON.parse(localStorage.getItem("data"));
+
+            if(testovany == null){
+                testovany = [];
+            }
+
+            this.setState({data: testovany});
+        }
+
+        render(){
+            return(
+            <>
+            <section className="header">
+                <a className="navbar-brand" style={{fontSize: "26px", fontWeight: "bold"}}>
+                    <img src="https://media.istockphoto.com/id/801762106/vector/pharmacy-icon.jpg?s=612x612&w=0&k=20&c=ED6GNMkLvo468lQGy9k0JIbvNhluF3iAfgAm9ThEEtk=" alt="Logo" width="85" height="85" style={{borderRadius: "10px"}} class="d-inline-block align-text-center"/> Pharmacy 
+                </a>
+
+                <div>
+                    <ul id="navbar">
+                        <li><a className="active" href="index.html"><i className="fa-solid fa-house"></i> Domov</a></li>
+                        <li><a href="kontakt.html"><i className="fa-solid fa-phone"></i> Kontakt</a></li>
+                        <li><a href="kosik.html"><i className="fa-solid fa-basket-shopping"></i> Košík</a></li>
+
+                        <li>
+                            <form className="d-flex" role="search">
+                                <input className="form-control me-2" type="search" placeholder="Hľadať" onChange={(event) => this.setState({hladanyVyraz: event.target.value})}/>
+                                <button className="btn" style={{color: "darkgreen", padding: "7px", borderRadius: "150%", border: "solid 1px lightgreen"}}><i class="fa-solid fa-pills"></i></button>
+                            </form>
+                            <div className="vyhladane">
+                                {
+                                    this.state.data.
+                                    filter(() => this.state.hladanyVyraz != "").
+                                    filter((produkt) => produkt.meno.toUpperCase().includes(this.state.hladanyVyraz.toUpperCase())).
+                                    map((produkt) => <a href={'./detailLieku.html?id=' + produkt.id}><p><img src={produkt.obrazok} style={{width: "30%", padding: "2px", borderRadius: "50%", border: "solid 1px lightgreen"}}/> {produkt.meno}</p></a>)
+                                }
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </>
+        )}
+    }
+
+    let hlavicka = ReactDOM.createRoot(document.getElementById("hlava"));
+    hlavicka.render(<Header/>);
+
+/* Pod hlavičkou */
+
+    class UnderHeader extends React.Component{
+
+        render(){
+            return(
+            <>
+                <section className="header">
+                        <ul id="under-header">
+                            <li><a href="lieky.html"> Lieky </a></li>
+                            <li><a className="active" href="doplnky.html"> Výživové doplnky </a></li>
+                            <li><a href="kozmetika.html"> Lekárenská kozmetika </a></li>
+                            <li><a href="potravinyNapoje.html"> Potraviny a nápoje</a></li>
+                            <li><a href="zdravotnickePomocky.html"> Zdravotnícke pomôcky </a></li>
+                            <li><a href="veterina.html"> Veterina </a></li>
+                        </ul>
+                </section>
+            </>
+        )}
+    }
+
+    let podHlava = ReactDOM.createRoot(document.getElementById("podHlavou"));
+    podHlava.render(<UnderHeader/>);
+
+/* Výživové doplnky - sekcia */
+
+    class Medicaments extends React.Component{
+
+        render(){
+            return(
+                <>    
+                    <section id="page-header-doplnky">
+                        <h2>Výživové doplnky</h2>
+                    </section>
+                </>
+            )}
+        } 
+
+    let liek = ReactDOM.createRoot(document.getElementById("liekyNadpis"));
+    liek.render(<Medicaments/>);
+
+
+/* Výživové doplnky */
+
+    class Doplnky extends React.Component{
+
+        constructor(props){
+            super(props);
+            const { lieky } = props;
+            this.state = {data: [], produkt: "", lieky: 0, ukazToaster: false, toasterSprava: ""}; 
+                    
+            this.pridajLiekDoKosika = this.pridajLiekDoKosika.bind(this)
+        };
+
+        componentDidMount(){
+            let lieky2 = JSON.parse(localStorage.getItem("data"));
+
+            if(lieky2 == undefined){
+                lieky2 = [];
+                }
+
+            this.setState({data: lieky2});
+
+            fetch("data.json").then((response)=>{
+                return response.json();
+                })
+                
+                .then((data)=>{localStorage.setItem("data", JSON.stringify(data));
+                    this.lieky = data;
+                    if(!localStorage.getItem("kosik")){
+                        localStorage.setItem("kosik", "[]");
+                    }
+                    });
+                
+            let lieky = JSON.parse(localStorage.getItem("lieky"));
+            let kosik = JSON.parse(localStorage.getItem("kosik"));           
+        }
+
+        ukazToaster(sprava) {
+            this.setState({ ukazToaster: true, toasterSprava: sprava });
+            setTimeout(() => this.setState({ ukazToaster: false, toasterSprava: "" }), 3000);
+            };
+            
+        render(){
+            return(
+                <section id="produkty" className="section-m1">
+                    <div className="pro-container">
+                        {this.state.data.filter((produkt) => produkt.kategoria == "doplnky").map((produkt) => 
+                        <div className="pro" id={produkt.id}> 
+                            <a href={'./detailLieku.html?id=' + produkt.id}><img src={produkt.obrazok}/></a>
+                            <div className="des">
+                                <h5>{produkt.meno}</h5>
+                                <h4>{produkt.cena} €</h4>
+                            </div>
+                            <a href="kosik.html" onClick={() => {this.pridajLiekDoKosika(event); this.ukazToaster("Liek bol pridaný do košíka!"); }}><i className="fa-sharp fa-solid fa-basket-shopping"></i> Pridaj do košíka</a>
+                            {this.state.ukazToaster && (
+                                <div id="toast">
+                                    <h3><strong style={{color: "navy"}}>{this.state.toasterSprava}</strong></h3>
+                                    <a href="./index.html"><button className="normal">Pokračovať v nákupe</button></a>
+                                    <a href="./kosik.html"><button className="normal">Do košíka</button></a>
+                                </div>
+                            )}
+                        </div>
+                        )}
+                    </div>
+                </section>
+            );
+        }
+
+        pridajLiekDoKosika(event){
+
+            console.log(event.target.parentNode.id)
+            event.preventDefault()
+
+            let liek = this.lieky.find(name => {
+            return name.id == event.target.parentNode.id;
+            });
+
+            let kosik = JSON.parse(localStorage.getItem("kosik"));
+
+            if(kosik.length == 0)
+            {
+                kosik.push(liek);
+            }else{
+                let res = kosik.find(element => element.id == event.target.parentNode.id);
+                if(res === undefined){
+                    kosik.push(liek);
+                } 
+                else {
+                    for(let i = 0; i < kosik.length; i++){
+                        if(kosik[i].id == event.target.parentNode.id){
+                            kosik[i]["mnozstvo"] += 1;
+                        }
+                    }
+                }
+            }
+            localStorage.setItem("kosik", JSON.stringify(kosik));
+        }
+    }
+
+    let tabletky = ReactDOM.createRoot(document.getElementById("liekyZoznam"));
+    tabletky.render(<Doplnky/>);
+
+
+/* Päta */
+
+    class Footer extends React.Component{
+
+        render(){
+            return(
+                <>    
+                <footer>
+                    <div className="col">
+                        <img src="https://media.istockphoto.com/id/801762106/vector/pharmacy-icon.jpg?s=612x612&w=0&k=20&c=ED6GNMkLvo468lQGy9k0JIbvNhluF3iAfgAm9ThEEtk=" width="45" height="45" style={{padding: "5px"}}/>
+                        <h4>Kontakt</h4>
+                        <p><strong>Telefón:</strong> +421 915 123 456 / +421 905 789 123</p>
+                        <p><strong>Hodiny:</strong> 07:00 - 16:00 (Pon - Ned)</p>
+                        <div className="follow">
+                            <h4>Sleduj nás aj na:</h4>
+                            <div>
+                                <i className="fab fa-facebook-f"></i>
+                                <i className="fab fa-twitter"></i>
+                                <i className="fab fa-instagram"></i>
+                                <i className="fab fa-pinterest-p"></i>
+                                <i className="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col install">
+                        <h4>Platobná brána</h4>
+                        <p>Secured Payment Gateways</p>
+                        <img src="fotky/paypal-payment-methods-icons-hd-png-download.png"/>
+                    </div>
+
+                    <div className="col install">
+                        <h4>Nainštaluj si aplikáciu</h4>
+                        <p>Z App Store alebo Google Play</p>
+                        <div className="row">
+                            <img src="fotky/apple-app-store-logo.jpg" alt=""/>
+                            <img src="fotky/google pay.png" alt=""/>
+                        </div>
+                    </div>
+
+                    <div className="copyright">
+                        <p>All rights reserved by Monika1959 @2023</p>
+                    </div>   
+                </footer>
+            </> 
+        )}
+    }  
+
+    let paticka = ReactDOM.createRoot(document.getElementById("pata"));
+    paticka.render(<Footer/>);
+
+</script>
+</body>
+</html>
